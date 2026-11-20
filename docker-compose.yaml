@@ -1,0 +1,12 @@
+services:
+  adobe-stock-scraper:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      # Adobe Stock's own JSON calls answer home, office, cloud and datacenter
+      # connections alike, so you don't need a proxy: your own connection is all
+      # it needs. Set one only if your server's address is ever refused.
+      # - ADOBE_STOCK_PROXY=http://user:pass@host:port

@@ -1,0 +1,1 @@
+{"data":{"getSearchResults":null},"errors":[{"message":"Invalid Search Input - the ASSET_TYPE filter is required and was not found in params.filters","path":["getSearchResults"],"locations":[{"line":1,"column":77}],"extensions":{"code":"CODE_INVALID_SEARCH_INPUT","service":"stock-search-gateway"}}]}
